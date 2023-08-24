@@ -14,7 +14,7 @@ import About from '../pages/About';
 const Routing: React.FC = () => {
   return (
       <Routes>
-        <Route path="/home" index element={<Home/>}  />
+        <Route path="/" index element={<Home/>}  />
         <Route path="/tours" element={<ToursPage/>}  />
         <Route path="/tours/:id" element={<TourDetails/>}  />
         <Route path="/tours/search" element={<Tours/>}  />

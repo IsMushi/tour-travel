@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: orange;
+    border-radius: 10px;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    @apply bg-slate-100
+}
+.menu-button{
+    display: none
+}
+.header{
+    @apply flex items-center p-5 leading-[80px]  h-[80px] w-full 
+}
+.sticky_header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: ■#fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px 8px -3px #ddd;
+    z-index: 999;
+    @apply bg-white
+}
+.link{
+    @apply font-serif mx-1 text-lg  text-slate-800;
+}
+.link:hover{
+    color: inherit;
+}
+.right-part{
+    @apply font-[500] gap-4 hover:text-orange-400
+}
+.register{
+    @apply bg-orange-400 text-sm font-normal text-white p-2 w-24 rounded-[25px] hover:bg-blue-400 h-10;
+    @apply transition-all duration-700
+}
+.input_field input{
+    @apply outline-none text-[0.9rem] text-slate-800  placeholder:text-slate-800
+}
+.search-button{
+    @apply text-white bg-orange-400 p-2 rounded-tl-[12px] cursor-pointer hover:bg-slate-800 transition-all duration-300 rounded-br-[12px] rounded font-bold mr-3
+}
+.tour_img{
+    @apply relative
+}
+.tour_img img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.tour_img span{
+    border-radius: 3px 0 0 0;
+    padding: 0.3rem 0.5rem;
+    @apply absolute bottom-0 right-0 w-max h-max z-10 text-white bg-orange-400
+}
+span i{
+    @apply text-orange-400
+}
+.tour-rating{
+    font-size: .9rem;
+    @apply text-slate-800
+}
+.tour_location{
+    @apply text-slate-800 font-semibold text-[.9rem] mt-1
+}
+.title{
+    @apply mt-[1rem] text-[1.1rem] cursor-pointer hover:text-orange-400 transition-[.3s]
+}
+.tour-bottom h3{
+    @apply text-orange-400 text-[1.1rem] font-bold
+}
+.tour-bottom h3 span{
+    @apply text-slate-800 font-[500]
+}
+.tour-bottom button{
+    padding: 0.5rem 0.4rem;
+    line-height: normal;
+    @apply cursor-pointer outline-none bg-orange-400 rounded  text-white;
+}
+.expreince_content h1{
+    @apply mt-[1rem] font-[500] text-[2.5rem]
+}
+.expreince_content p{
+    @apply font-[1.1rem] mt-[1rem] text-slate-800
+}
+.counter-wrapper{
+    @apply mt-[2.5rem]
+}
+.counter-box span{
+    @apply w-[70px] h-[70px] m-auto flex items-center justify-center bg-orange-400 rounded-[5px] rounded-tr-[20px] rounded-bl-[20px] text-white font-semibold;
+    @apply text-[1.2rem]
+}
+.counter-box h2{
+    @apply text-[1.1rem] mt-[0.4rem] text-slate-800
+}
+.gallery-title{
+    @apply text-[2.3rem] font-[500] mt-[2.5rem] mb-[1rem]
+}
+.gallery-img{
+    transition: .3s;
+}
+.gallery-img:hover{
+    transform: scale(1.1);
+    @apply cursor-pointer
+}
+.newletter{
+    @apply mt-[3rem] bg-[#cae5f4] px-10  z-10 left-0 right-0
+}
+.newletter-img{
+    width: 100%;
+}
+.newsletter_content h2{
+    @apply md:text-[2.2rem] text-[20px] mb-2 mt-[2rem]
+}
+.newsletter_input{
+    @apply md:flex justify-between items-center bg-white p-[0.5rem] rounded-[5px] mb-[2rem]
+}
+.newsletter_input input{
+    @apply text-[1rem] outline-none border-none text-slate-800 font-[500] w-full
+}
+.btn-newletter{
+    padding: 0.5rem 1.5rem !important;
+    color: #fff !important;
+    @apply text-[1.1rem]
+}
+.newsletter_content p{
+    @apply text-slate-800 text-[1.1rem]
+}
+.footer-link_title{
+    @apply text-slate-900 mb-[1rem] text-xl
+}
+.footer-quick-link{
+    @apply text-slate-800 text-[1.1rem]
+}
+.common-section{
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('./assets/images/tour.jpg') no-repeat center center;
+    @apply flex h-[300px] justify-center items-center text-center;
+    background-size: cover;
+
+}
+.common-section h1{
+    font-size: 2.5rem;
+    @apply text-white
+}
+.pagination span{
+    @apply w-[32px] h-[32px] p-[5px] rounded-[50px] flex justify-center text-[1.1rem] items-center border border-gray-800 cursor-pointer
+}
+.active-page{
+    @apply bg-orange-400
+}
+.tour_detail img{
+    @apply w-full rounded-[.5rem] mb-[2.5rem]
+}
+.tour_info{
+    border:  1px solid #e5e7eb;
+    @apply  rounded-[.5rem] p-[2rem];
+
+}
+.tour_info h2{
+    @apply text-[1.5rem]
+}
+.tour_info span{
+    font-style: 1rem;
+    column-gap: 0.5rem;
+    @apply flex items-center  text-slate-800
+}
+.tour_info span i{
+    @apply text-gray-900 text-[1.1rem]
+}
+.tour_extradetail{
+    @apply flex items-center mt-[1rem] gap-9 mb-[2.5rem]
+}
+.tour_info .desc{
+    line-height: 30px;
+    @apply text-[1rem] text-slate-800
+}
+.rating_group span{
+    font-size: 1.1rem;
+    @apply flex items-center text-orange-400
+}
+.tour_review h4{
+    @apply mb-[3rem]
+}
+.input_review{
+    @apply flex items-center mb-3 justify-between w-full p-[0.7rem] rounded-[2rem]  border border-orange-400
+}
+.input_review input{
+    padding: 0.5rem 0;
+    @apply border-none  w-full h-full font-[500] text-base placeholder:text-slate-500 outline-none rounded-[2rem] bg-transparent px-2 ;
+}
+.review-item{
+    column-gap: 1rem;
+    border-width: 50%;
+    @apply flex items-center space-y-3 
+}
+.review-item img{
+    @apply w-[3.5rem] h-[3.5rem]  object-cover rounded-[50px]
+}
+.user-review{
+    @apply mt-[2.5rem]
+}
+.review-item h5{
+    @apply text-[1rem] mb-0
+}
+.review-item p{
+    font-size: 0.9rem;
+    @apply text-slate-800
+}
+.review-item h6{
+    @apply text-[1.1rem]
+}
+.review-item span i{
+    @apply text-[1.2rem] text-orange-400
+}
+.booking{
+    border:  1px solid #e5e7eb;
+    @apply p-[2rem] rounded-[.5rem] sticky top-[80px]
+}
+.booking_top h2{
+    @apply text-[2rem] font-[700]
+}
+.booking_top h2 span{
+    @apply text-[1.1rem] font-[400] text-slate-800
+}
+.booking_top {
+    @apply pt-[2rem] border-b border-[#e5e7eb]
+}
+.booking_body{
+    @apply pt-[2rem]
+}
+.booking_body h1{
+    @apply mb-[1rem]
+}
+.booking_body input{
+    @apply w-full p-[0.5rem] rounded-[.5rem] text-[1rem] outline-none border-b border-[#e5e7eb] mt-2 autofill:bg-transparent placeholder:text-slate-500
+}
+.booking_body form{
+    @apply p-[1rem] border border-[#e5e7eb]
+}
+ul{
+    list-style: none;
+}
+.booking_bottom li{
+    @apply flex justify-between items-center
+}
+.booking_bottom li h5,.booking_bottom li span{
+    @apply text-[1rem] font-[500] text-slate-800
+}
+.booking_bottom{
+    @apply mt-[1rem]
+}
+.booking_bottom li:last-child span,.booking_bottom li:last-child h5{
+    @apply font-[600]
+}
+.login_img{
+    @apply  w-full text-center
+}
+.login_img img{
+    object-fit: contain;
+    @apply md:w-[70%] w-full
+}
+.login_form{
+    @apply p-[50px] relative bg-orange-400
+}
+.login_container{
+    box-shadow: rgba(17, 12, 46, 0.15);
+    @apply mt-[100px]
+}
+.login_form .user{
+    transform: translate(-50%,-9%);
+    top: -9%;
+    @apply w-[80px] h-[80px] absolute left-[50%]
+}
+.login_container .user img{
+    @apply w-full rounded-[50%]
+}
+.login_form h2{
+    @apply text-white text-center mb-[2rem] text-3xl
+}
+.login_form{
+    @apply md:w-[70%]
+}
+.login_form input{
+    padding: 0.5rem 1rem;
+    @apply w-full rounded-[5px] border-none text-[1rem] placeholder:text-slate-500 text-slate-800 outline-none mb-3
+}
+.login_form p{
+    @apply text-[.9rem] text-white mt-[1.2rem] text-center
+}
+.login_form p a{
+    @apply text-slate-900 ml-[5px] font-[500]
+}

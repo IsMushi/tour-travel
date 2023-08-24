@@ -7,7 +7,6 @@ import tourImg06 from "../images/tour-img06.jpg";
 import tourImg07 from "../images/tour-img07.jpg";
 import avator from '../images/avatar.jpg';
 
-
 const Tours= [
   {
     id: "01",

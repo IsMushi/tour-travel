@@ -4,13 +4,14 @@ import Tours from '../assets/data/tours'
 import calculateAvgRating from '../utils/avgRating'
 import Booking from '../components/Booking/Booking'
 
+
 const TourDetails:React.FC=() =>{
   const {totalrating,avgRating}:any=calculateAvgRating
   const reviewMSgRef=useRef<HTMLInputElement | null>()
   const [tourRating,setRating]=useState<Number>()
   const {id}=useParams()
   const dt=new Date("01-18-23")
-  const tour= Tours.find(tour=>tour.id === id)
+  const tour = Tours.find(tour=>tour.id === id)
   const optional:any = {
     day:'numeric',month:'long',year:'numeric'
   }
@@ -156,7 +157,7 @@ const TourDetails:React.FC=() =>{
           </div>
         </div>
         <div className="col-span-4 px-3">
-          <Booking tours={tour} avgRating={avgRating} />
+          <Booking price={tour?.price} avgRating={avgRating} photo={tour?.photo} featured={false} />
         </div>
       </div>
     </div>

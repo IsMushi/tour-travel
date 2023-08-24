@@ -9,9 +9,9 @@ interface Detailinformation{
     guestSize:Number,
     bookAt:Date | string
 }
-const  Booking:React.FC<TourItem>=({tours,avgRating}:any)=>{
+const  Booking:React.FC<TourItem>=({avgRating,price,reviews}:any,)=>{
     const navigat = useNavigate()
-    const {price,reviews}= tours
+    // const {price,reviews}= props
     const [totalamount,setamount]= useState<Number | null>()
     const [credential,setCredential]=useState<Detailinformation>({
         id:'01',

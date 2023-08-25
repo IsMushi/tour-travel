@@ -31,7 +31,7 @@ export default function TourCard({tours}:any) {
         </span>
       </div>
       <h1 className='title'><Link to={`/tours/${id}`} >{title}</Link></h1>
-        <div className="md:flex tour-bottom items-center justify-between mt-3">
+        <div className="flex tour-bottom items-center justify-between mt-3">
           <h3>${price} <span>/per person</span></h3>
           <button><Link to={`/tours/${id}`}>Book Now</Link></button>
         </div>

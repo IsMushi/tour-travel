@@ -13,7 +13,7 @@ const Login:React.FC=()=>{
   }
   return (
     <section>
-      <div className="comntainer px-20">
+      <div className="comntainer md:px-20 px-2">
         <div className="grid grid-cols-12">
           <div className="col-span-12">
             <div className="login_container grid md:grid-cols-2 gap-4 ">

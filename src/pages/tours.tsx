@@ -15,14 +15,14 @@ export default function ToursPage() {
   return(
     <>
     <CommonSection title={'All Tours'} />
-    <div className='px-20 mt-10'>
+    <div className='md:px-20 mt-10 px-2'>
       <section>
-      <div className="">
+      <div className="md:block">
         <Searchbar />
       </div>
       </section>
       <section className='mt-10'>
-        <div className="grid grid-cols-4 space-y-2 gap-4">
+        <div className="grid md:grid-cols-4 space-y-2 gap-4">
           {
             Tours.map((item,index)=>(
               <div className="columns-3xs mb-2" key={index}>

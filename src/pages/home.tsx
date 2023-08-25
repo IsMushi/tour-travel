@@ -14,7 +14,7 @@ import NewLetter from '../shared/NewLetter'
 
 const Home:React.FC=()=> {
   return (
-    <><div className="px-20 relative mt-10 container">
+    <><div className="md:px-20 px-3 relative mt-10 container">
       <div className='w-full md:flex '>
         <div className="content  md:w-1/2 full  p-3 text-justify">
           <div className="m-4 flex items-center">

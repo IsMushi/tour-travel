@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ThankYou:React.FC=()=> {
   return (
-    <div className="px-20">
+    <div className="md:px-20 px-2">
       <div className="container mt-20 flex justify-center items-center">
         <div className="grid grid-cols-12">
           <div className="thank_you col-span-12 w-[500px] border p-4 flex flex-col rounded-[0.5rem] mt-auto ">
